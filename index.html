@@ -1,88 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Creation Space</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* إعدادات الصفحة الأساسية */
+        body {
+            background-color: #050505; /* لون خلفية الصفحة كاملة */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #000000, #14002b);
-    color: #ffffff;
-    text-align: center;
-}
+        /* حاوية القالب (الـ Card الرئيسي) */
+        .lp-card {
+            background-color: #0f0f12; /* لون الإطار الداكن */
+            width: 90%;
+            max-width: 450px;
+            padding: 40px 25px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            border: 1px solid #1a1a1e;
+        }
 
-.container {
-    padding: 30px 20px;
-}
+        /* علامة الإغلاق (لشكل احترافي فقط) */
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0.7;
+        }
 
-img {
-    width: 100%;
-    max-width: 380px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
+        /* العنوان الرئيسي */
+        .headline {
+            color: #ffffff;
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
 
-h1 {
-    font-size: 26px;
-    margin-bottom: 10px;
-}
+        /* العنوان الفرعي (الوعد السريع) */
+        .sub-headline {
+            color: #ffb347; /* لون برتقالي ذهبي */
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
 
-p {
-    font-size: 15px;
-    color: #cccccc;
-    margin-bottom: 25px;
-}
+        /* الزر (CTA) */
+        .cta-button {
+            background-color: #5e5ce6; /* اللون البنفسجي */
+            color: white;
+            padding: 14px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
 
-.btn {
-    display: inline-block;
-    padding: 15px 35px;
-    background: #ff0077;
-    color: #ffffff;
-    font-size: 18px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 15px rgba(255, 0, 119, 0.6);
-}
+        .cta-button:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
 
-.btn:hover {
-    background: #e6006b;
-}
+        /* حاوية الصورة والمميزات */
+        .image-section {
+            position: relative;
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
 
-.urgent {
-    margin-top: 15px;
-    font-size: 13px;
-    color: #aaaaaa;
-}
-</style>
+        .image-section img {
+            width: 100%;
+            display: block;
+            filter: brightness(0.7); /* تغميق الصورة لتبرز النصوص */
+        }
+
+        /* قائمة المميزات فوق الصورة */
+        .features-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            text-align: left;
+        }
+
+        .feature-item {
+            color: #fff;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .feature-item span {
+            color: #ffb347; /* لون علامة الصح */
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+    <div class="lp-card">
+        <div class="close-btn">✕</div>
+        
+        <h1 class="headline">Create NSFW AI Content</h1>
+        <div class="sub-headline">Join free in 15 seconds</div>
+        
+        <a href="رابط_العرض_هنا" class="cta-button">
+            Sign Up →
+        </a>
 
-<!-- ضع صورتك هنا -->
-<img src="image.jpg" alt="AI Experience">
-
-<h1>Create Your Own AI Fantasy</h1>
-
-<p>No limits. Fully customizable AI experience.</p>
-
-<a href="YOUR_CPA_LINK_HERE" class="btn">Start Now</a>
-
-<div class="urgent">🔥 Trending now – limited access available</div>
-
-</div>
-
-<script>
-// Redirect تلقائي بعد 3.5 ثواني
-setTimeout(function(){
-    window.location.href = "YOUR_CPA_LINK_HERE";
-}, 3500);
-</script>
+        <div class="image-section">
+            <img src="https://via.placeholder.com/400x225/111/fff?text=AI+Girl+Image" alt="AI Content">
+            
+            <div class="features-overlay">
+                <div class="feature-item"><span>✔</span> Create AI Images (No Filter)</div>
+                <div class="feature-item"><span>✔</span> Starter credits included</div>
+                <div class="feature-item"><span>✔</span> No credit card required</div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
